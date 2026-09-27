@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#e2e0f7","inverse-surface":"#e2e0f7","surface-variant":"#333344","tertiary-fixed":"#f0dbff","on-surface-variant":"#cfc2d6","inverse-primary":"#842bd2","surface-bright":"#373849","on-primary-container":"#400071","on-error-container":"#ffdad6","on-primary-fixed":"#2c0051","primary-fixed":"#f0dbff","on-secondary-fixed-variant":"#004395","surface-container-high":"#282939","surface-container-lowest":"#0c0d1c","secondary-container":"#0566d9","on-secondary-container":"#e6ecff","outline-variant":"#4d4354","inverse-on-surface":"#2e2f40","outline":"#988d9f","on-error":"#690005","on-secondary-fixed":"#001a42","on-surface":"#e2e0f7","on-tertiary-fixed-variant":"#62259b","on-primary":"#490080","on-tertiary-fixed":"#2c0051","tertiary-container":"#b175ec","surface-container-low":"#191a2a","surface-container":"#1d1e2e","error-container":"#93000a","primary":"#ddb7ff","surface":"#111221","primary-container":"#b76dff","surface-tint":"#ddb7ff","tertiary-fixed-dim":"#ddb8ff","secondary":"#adc6ff","secondary-fixed":"#d8e2ff","on-primary-fixed-variant":"#6900b3","on-tertiary-container":"#400071","on-secondary":"#002e6a","surface-dim":"#111221","tertiary":"#ddb8ff","surface-container-highest":"#333344","on-tertiary":"#490081","primary-fixed-dim":"#ddb7ff","secondary-fixed-dim":"#adc6ff","error":"#ffb4ab","background":"#111221"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"3rem","gutter":"1.5rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.5rem"},"fontFamily":{"headline-md":["Space Grotesk"],"label-code":["JetBrains Mono"],"body-md":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Space Grotesk"],"display-hero":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-sm":["Inter"],"label-caps":["Space Grotesk"],"display-hero-mobile":["Space Grotesk"]},"fontSize":{"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-code":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.12em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary selection:text-on-primary"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-primary/10 blur-[120px]"></div><div class="absolute top-1/3 -right-40 w-96 h-96 rounded-full bg-secondary-container/10 blur-[140px]"></div><div class="absolute -bottom-40 left-1/3 w-[30rem] h-[30rem] rounded-full bg-tertiary-container/10 blur-[160px]"></div></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface/75 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.4)] border-b border-primary/20"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="LaunchPad Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W1kMhZM4cOlaHQgZoh0DSDHGIat9YLlmCoh1FixqvwCynYo2V66qECIvVq1ITfbnotCs5taZztBWTrZt1SYTcBZoGQcJeeSjA5bkGTn91o_HPo2KZuWAVDB7RgcoKEXbCIQ7cKey9JJd3jH8d1gdve_jJB8I8SQJQM3nelI6VC5uhffOHFjgwAU0GpcViw8ZC_KF_OpCLdTtL569rT94atPKjM3c0SUD4_YsDr4vD67ziCJs7O-iRRi01i"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">LaunchPad</span></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(183,109,255,0.35)]"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(183,109,255,0.35)]" data-path="features" href="#">Features</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-lg transition-all font-body-md text-body-md" data-path="platform" href="#">Platform</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-lg transition-all font-body-md text-body-md" data-path="architecture" href="#">Architecture</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-lg transition-all font-body-md text-body-md" data-path="pricing" href="#">Pricing</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/40 rounded-lg transition-all font-body-md text-body-md" data-path="docs" href="#">Docs</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex px-space-md py-space-xs font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sign-in" href="#">Sign In</a><a class="inline-flex items-center justify-center px-space-lg py-space-xs rounded-lg bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary font-headline-sm text-body-md font-semibold tracking-wide shadow-[0_0_20px_rgba(183,109,255,0.45)] hover:shadow-[0_0_28px_rgba(183,109,255,0.7)] hover:brightness-110 transition-all" data-path="console-overview" href="#">Launch Console</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(221,183,255,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative z-10 w-full pt-20 bg-background"><div class="flex flex-col w-full relative">
+<!-- Interactive Orbital Background Grid & Ambient Glows -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+<div class="absolute top-10 left-1/2 -translate-x-1/2 w-[70rem] h-[35rem] bg-gradient-to-b from-primary/15 via-secondary/5 to-transparent blur-[120px] rounded-full"></div>
+<div class="absolute top-[45rem] -left-48 w-96 h-96 bg-primary-container/20 blur-[130px] rounded-full"></div>
+<div class="absolute top-[90rem] -right-40 w-[30rem] h-[30rem] bg-secondary-container/15 blur-[140px] rounded-full"></div>
+</div>
+<!-- 1. HERO SECTION -->
+<section class="relative z-10 w-full max-w-7xl mx-auto px-gutter pt-space-xl pb-space-xl">
+<div class="flex flex-col items-center text-center space-y-space-lg">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-xl shadow-[0_0_20px_rgba(183,109,255,0.2)]">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">
+          Next-Gen Orbital Operating System • v3.2 Released
+        </span>
+</div>
+<!-- Headline -->
+<h1 class="max-w-5xl font-display-hero text-display-hero text-on-surface">
+<span class="bg-gradient-to-r from-primary via-tertiary-container to-secondary bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(183,109,255,0.45)]">
+          Autonomous Mission Control
+        </span>
+<br/>
+        for the New Space Economy
+      </h1>
+<!-- Subheadline -->
+<p class="max-w-3xl font-body-lg text-body-lg text-on-surface-variant font-normal">
+        Deploy, monitor, and automate satellite constellations, orbital payload logistics, and deep-space telemetry pipelines from a single developer-first cloud platform.
+      </p>
+<!-- CTA Button Group -->
+<div class="flex flex-wrap items-center justify-center gap-space-md pt-space-xs">
+<a class="group inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-lg bg-gradient-to-r from-primary-container via-tertiary-container to-secondary-container text-on-primary font-headline-sm text-body-md font-semibold tracking-wide shadow-[0_0_30px_rgba(183,109,255,0.55)] hover:shadow-[0_0_40px_rgba(183,109,255,0.8)] hover:brightness-110 transition-all duration-300 transform hover:-translate-y-0.5" href="#pricing">
+<span>Get Started</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:translate-x-1">rocket_launch</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-container-high/60 backdrop-blur-2xl text-on-surface font-body-md text-body-md font-medium hover:bg-surface-variant/70 shadow-[0_0_20px_rgba(0,0,0,0.4)] hover:shadow-[0_0_25px_rgba(183,109,255,0.25)] transition-all" href="#features">
+<span class="material-symbols-outlined text-secondary text-[20px]">sensors</span>
+<span>Schedule Telemetry Demo</span>
+</a>
+</div>
+<!-- Trust Metrics & Social Proof Logos -->
+<div class="pt-space-lg w-full flex flex-col items-center space-y-space-md">
+<span class="font-label-code text-label-code uppercase text-on-surface-variant/80 tracking-widest">
+          Trusted by 140+ aerospace contractors and satellite operators
+        </span>
+<div class="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-80">
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-tighter">
+<span class="material-symbols-outlined text-primary text-[24px]">public</span>
+<span>Orbital<span class="text-primary font-bold">X</span></span>
+</div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-tight">
+<span class="material-symbols-outlined text-secondary text-[24px]">join_right</span>
+<span>Astro<span class="text-secondary font-light">Dynamics</span></span>
+</div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-wider">
+<span class="material-symbols-outlined text-tertiary text-[24px]">flare</span>
+<span>HELIOS<span class="text-xs uppercase font-label-code text-tertiary align-super">SAT</span></span>
+</div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[24px]">satellite_alt</span>
+<span>Nova<span class="text-primary font-semibold">Space</span></span>
+</div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-widest font-light">
+<span class="material-symbols-outlined text-secondary text-[24px]">navigation</span>
+<span>VECTOR</span>
+</div>
+</div>
+</div>
+<!-- Interactive HUD / Telemetry Deck Preview Card -->
+<div class="w-full pt-space-lg">
+<div class="relative w-full rounded-xl bg-surface-container-low/85 backdrop-blur-2xl p-space-md md:p-space-lg shadow-[0_0_50px_rgba(183,109,255,0.15)] overflow-hidden">
+<!-- Glass Topbar HUD -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md mb-space-md bg-surface-container/60 -mx-space-md -mt-space-md md:-mx-space-lg md:-mt-space-lg p-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error/80"></span>
+<span class="w-3 h-3 rounded-full bg-secondary/80"></span>
+<span class="w-3 h-3 rounded-full bg-primary/80"></span>
+<span class="ml-space-sm font-label-code text-label-code text-on-surface font-semibold tracking-wide">
+                MISSION DECK // LEO-CONSTELLATION-08
+              </span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                LIVE UPLINK STABLE
+              </span>
+<span class="text-on-surface-variant hidden sm:inline">UTC: 18:42:09.114</span>
+</div>
+</div>
+<!-- HUD Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md text-left">
+<!-- Left Panel: Real-time Telemetry Stream -->
+<div class="lg:col-span-4 flex flex-col space-y-space-sm">
+<div class="p-space-md rounded-lg bg-surface-container-high/60 backdrop-blur-md">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-caps text-label-caps text-primary tracking-widest">PROPULSION TELEMETRY</span>
+<span class="font-label-code text-label-code text-secondary font-bold">STAGE 2 BURNING</span>
+</div>
+<div class="space-y-2 font-label-code text-label-code">
+<div class="flex justify-between text-on-surface-variant">
+<span>Thrust Vector Pitch:</span>
+<span class="text-on-surface font-semibold">+0.142°</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Chamber Pressure:</span>
+<span class="text-on-surface font-semibold">108.4 bar [Nominal]</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Specific Impulse (Isp):</span>
+<span class="text-on-surface font-semibold">324.6 s</span>
+</div>
+</div>
+<!-- Mini Progress Bar -->
+<div class="w-full bg-surface-variant rounded-full h-1.5 mt-space-sm overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-secondary h-1.5 rounded-full w-[78%]"></div>
+</div>
+</div>
+<!-- Realtime Terminal Log -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest font-label-code text-label-code text-on-surface-variant space-y-1.5 h-44 overflow-hidden relative">
+<div class="text-secondary">[18:41:59] &gt; Ephemeris calculation synced via Kalman-Bucy filter</div>
+<div class="text-on-surface">[18:42:01] &gt; Autonomous thruster micro-pulse: +0.02 m/s delta-v</div>
+<div class="text-primary">[18:42:04] &gt; RF Handshake accepted: Svalbard Station Ground Array</div>
+<div class="text-secondary">[18:42:06] &gt; Doppler drift corrected: -4.12 kHz</div>
+<div class="text-on-surface">[18:42:08] &gt; Solar panel alpha tracking: 99.8% photon exposure</div>
+<div class="text-primary animate-pulse">[18:42:09] &gt; Optical Downlink established @ 48.2 Gbps</div>
+<div class="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-surface-container-lowest to-transparent pointer-events-none"></div>
+</div>
+</div>
+<!-- Center Panel: Orbital Trajectory Visualization Mockup -->
+<div class="lg:col-span-5 relative flex flex-col justify-between p-space-md rounded-lg bg-surface-container/70 backdrop-blur-md overflow-hidden min-h-[260px]">
+<div class="absolute inset-0 opacity-20 pointer-events-none flex items-center justify-center">
+<svg class="w-full h-full" fill="none" stroke="currentColor" viewbox="0 0 500 300">
+<ellipse class="animate-spin [animation-duration:40s]" cx="250" cy="150" rx="200" ry="80" stroke="#b76dff" stroke-dasharray="4 4" stroke-width="1.5"></ellipse>
+<ellipse cx="250" cy="150" rx="150" ry="120" stroke="#adc6ff" stroke-width="1.5"></ellipse>
+<circle cx="250" cy="150" fill="#191a2a" r="48" stroke="#b76dff" stroke-width="2"></circle>
+<circle cx="250" cy="150" fill="#b76dff" r="14"></circle>
+<circle class="animate-ping" cx="370" cy="190" fill="#adc6ff" r="6"></circle>
+<circle cx="370" cy="190" fill="#adc6ff" r="5"></circle>
+</svg>
+</div>
+<div class="relative z-10 flex justify-between items-start">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">TRAJECTORY SOLVER 3D</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Orbital Path: LEO Sync</div>
+</div>
+<span class="font-label-code text-label-code px-space-xs py-1 rounded bg-secondary-container/30 text-secondary">
+                  APOGEE: 540 KM
+                </span>
+</div>
+<div class="relative z-10 flex flex-wrap gap-space-sm pt-space-xl">
+<div class="px-space-sm py-1 rounded bg-surface-container-high/90">
+<div class="font-label-caps text-label-caps text-on-surface-variant">INCLINATION</div>
+<div class="font-label-code text-label-code text-on-surface font-bold">51.6419°</div>
+</div>
+<div class="px-space-sm py-1 rounded bg-surface-container-high/90">
+<div class="font-label-caps text-label-caps text-on-surface-variant">ECCENTRICITY</div>
+<div class="font-label-code text-label-code text-on-surface font-bold">0.00014</div>
+</div>
+<div class="px-space-sm py-1 rounded bg-surface-container-high/90">
+<div class="font-label-caps text-label-caps text-on-surface-variant">ORBITAL PERIOD</div>
+<div class="font-label-code text-label-code text-on-surface font-bold">92.4 MIN</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: Telemetry Health Gauges -->
+<div class="lg:col-span-3 flex flex-col justify-between space-y-space-sm">
+<div class="p-space-md rounded-lg bg-surface-container-high/60 backdrop-blur-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SLA UPTIME RELIABILITY</span>
+<div class="font-headline-md text-headline-md text-primary font-bold mt-1">99.999%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deterministic failover via distributed LEO cross-links.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high/60 backdrop-blur-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">GROUND-LINK LATENCY</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold mt-1">14ms</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Phase-steered phased array tracking.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high/60 backdrop-blur-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">ACTIVE SATELLITES</span>
+<div class="font-headline-md text-headline-md text-on-surface font-bold mt-1">420 SVs</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated autonomous constellation mesh.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. THREE-COLUMN FEATURES GRID -->
+<section class="relative z-10 w-full max-w-7xl mx-auto px-gutter py-space-xl" id="features">
+<div class="flex flex-col space-y-space-xl">
+<!-- Section Header -->
+<div class="max-w-3xl space-y-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps tracking-widest">
+          CAPABILITIES
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          Mission-Critical Infrastructure at Orbital Velocity
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Built with aerospace-grade fault tolerance, sub-millisecond telemetry routing, and end-to-end cryptographic integrity.
+        </p>
+</div>
+<!-- Feature Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Feature 1 -->
+<div class="group relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low/75 backdrop-blur-2xl shadow-[0_0_30px_rgba(0,0,0,0.35)] hover:shadow-[0_0_35px_rgba(183,109,255,0.25)] transition-all duration-300">
+<div class="space-y-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary shadow-[0_0_20px_rgba(183,109,255,0.4)]">
+<span class="material-symbols-outlined text-[32px]">alt_route</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Autonomous Constellation Routing
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              AI-driven collision avoidance and orbital path re-indexing in sub-second intervals across LEO, MEO, and GEO belts without human intervention.
+            </p>
+</div>
+<!-- Feature Widget 1 -->
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-high/80 font-label-code text-label-code space-y-2">
+<div class="flex items-center justify-between text-secondary">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                Trajectory Nominal
+              </span>
+<span class="text-on-surface-variant">GEO-SYNC</span>
+</div>
+<div class="text-on-surface font-semibold">
+              Collision Risk &lt; 0.0001%
+            </div>
+<div class="w-full bg-surface-variant rounded-full h-1">
+<div class="bg-secondary h-1 rounded-full w-[99%]"></div>
+</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="group relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low/75 backdrop-blur-2xl shadow-[0_0_30px_rgba(0,0,0,0.35)] hover:shadow-[0_0_35px_rgba(183,109,255,0.25)] transition-all duration-300">
+<div class="space-y-space-md">
+<div class="w-14 h-14 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary shadow-[0_0_20px_rgba(5,102,217,0.4)]">
+<span class="material-symbols-outlined text-[32px]">satellite_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Sub-Millisecond Optical Downlinks
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Terabit-scale laser ground-station data aggregation with automated cloud ingest and zero packet-loss synchronization across planetary networks.
+            </p>
+</div>
+<!-- Feature Widget 2 -->
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-high/80 font-label-code text-label-code space-y-2">
+<div class="flex items-center justify-between text-primary">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Laser Link Active
+              </span>
+<span class="text-on-surface-variant">24/24 RELAYS</span>
+</div>
+<div class="text-on-surface font-semibold">
+              48.2 Gbps Live Ingest
+            </div>
+<div class="w-full bg-surface-variant rounded-full h-1">
+<div class="bg-primary h-1 rounded-full w-[92%]"></div>
+</div>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="group relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low/75 backdrop-blur-2xl shadow-[0_0_30px_rgba(0,0,0,0.35)] hover:shadow-[0_0_35px_rgba(183,109,255,0.25)] transition-all duration-300">
+<div class="space-y-space-md">
+<div class="w-14 h-14 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary shadow-[0_0_20px_rgba(177,117,236,0.4)]">
+<span class="material-symbols-outlined text-[32px]">enhanced_encryption</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Cryptographic Command &amp; Telemetry
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Post-quantum encrypted uplink controls with zero-trust multi-sig authorization keys for critical propulsion and orbital maneuvers.
+            </p>
+</div>
+<!-- Feature Widget 3 -->
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-high/80 font-label-code text-label-code space-y-2">
+<div class="flex items-center justify-between text-tertiary">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                PQ-Dilithium Locked
+              </span>
+<span class="text-on-surface-variant">ITAR-L5</span>
+</div>
+<div class="text-on-surface font-semibold">
+              Dual-Operator Key Lock Active
+            </div>
+<div class="w-full bg-surface-variant rounded-full h-1">
+<div class="bg-tertiary h-1 rounded-full w-[100%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. LIVE ARCHITECTURE & STATS BANNER -->
+<section class="relative z-10 w-full max-w-7xl mx-auto px-gutter py-space-xl">
+<div class="p-space-lg rounded-xl bg-surface-container/60 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg">
+<div class="space-y-space-xs text-left">
+<div class="font-label-caps text-label-caps uppercase text-primary tracking-widest">TELEMETRY STREAM</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">1.4M+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Daily processed packets with 0% data drop</div>
+</div>
+<div class="space-y-space-xs text-left">
+<div class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">LATENCY BUDGET</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">&lt; 18ms</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Mean uplink latency across all active ground arrays</div>
+</div>
+<div class="space-y-space-xs text-left">
+<div class="font-label-caps text-label-caps uppercase text-tertiary tracking-widest">ORBITAL SLA</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">99.999%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">High-availability deterministic node quorum</div>
+</div>
+<div class="space-y-space-xs text-left">
+<div class="font-label-caps text-label-caps uppercase text-primary tracking-widest">REGULATORY ASSURANCE</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">100% ITAR</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">SOC2 Type II &amp; AS9100D aerospace qualified</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. GLASSMORPHISM PRICING TABLE -->
+<section class="relative z-10 w-full max-w-7xl mx-auto px-gutter py-space-xl" id="pricing">
+<div class="flex flex-col space-y-space-xl">
+<!-- Section Heading & Toggle Pill -->
+<div class="flex flex-col items-center text-center space-y-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps tracking-widest">
+          TRANSPARENT SCALE-UP PRICING
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface max-w-2xl">
+          Predictable Economics for Constellations of Any Size
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          From experimental university CubeSats to interplanetary multi-spacecraft operations.
+        </p>
+<!-- Billing Period Toggle -->
+<div class="inline-flex p-1 rounded-lg bg-surface-container-high/70 backdrop-blur-md shadow-inner" id="pricing-toggle">
+<button class="billing-btn active px-space-md py-1.5 rounded bg-primary-container text-on-primary font-body-md text-body-md font-semibold transition-all" data-period="monthly" type="button">
+            Monthly Invoicing
+          </button>
+<button class="billing-btn px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-all" data-period="annual" type="button">
+            Annual Commitment (Save 20%)
+          </button>
+</div>
+</div>
+<!-- Pricing Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-stretch">
+<!-- Card 1: Explorer / Suborbital -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low/75 backdrop-blur-2xl shadow-[0_0_24px_rgba(0,0,0,0.3)] hover:shadow-[0_0_35px_rgba(183,109,255,0.2)] transition-all">
+<div class="space-y-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Explorer / Suborbital</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">For university cubesats, prototype payloads, and early orbital test-flights.</p>
+</div>
+<div class="py-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold price-val" data-annual="$1,190" data-monthly="$1,490">$1,490</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ mo</span>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Up to 3 satellites active</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>5 ground station passes / day</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>100 GB hot telemetry log storage</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Standard REST &amp; GraphQL APIs</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Community Discord support</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex justify-center items-center py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-body-md text-body-md font-semibold transition-all" href="#">
+              Start Free Sandbox
+            </a>
+</div>
+</div>
+<!-- Card 2: Orbital Constellation (FEATURED) -->
+<div class="relative flex flex-col justify-between p-space-lg rounded-xl bg-surface-container/90 backdrop-blur-2xl shadow-[0_0_40px_rgba(183,109,255,0.35)] scale-105 z-20">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-space-md py-0.5 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps font-bold shadow-[0_0_15px_rgba(183,109,255,0.6)]">
+            RECOMMENDED
+          </div>
+<div class="space-y-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Orbital Constellation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">For commercial LEO constellations and orbital payload operators.</p>
+</div>
+<div class="py-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold price-val" data-annual="$4,680" data-monthly="$5,850">$5,850</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ mo</span>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>Up to 25 satellites simultaneous</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>Unlimited ground network links</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>Real-time autonomous collision avoidance</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>5 TB hot telemetry log storage</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>24/7 dedicated flight engineer hotline</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>99.99% guaranteed SLA</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex justify-center items-center py-space-sm rounded-lg bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary font-headline-sm text-body-md font-semibold tracking-wide shadow-[0_0_24px_rgba(183,109,255,0.5)] hover:shadow-[0_0_36px_rgba(183,109,255,0.75)] hover:brightness-110 transition-all" href="#">
+              Get Started Now
+            </a>
+</div>
+</div>
+<!-- Card 3: Deep Space Enterprise -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low/75 backdrop-blur-2xl shadow-[0_0_24px_rgba(0,0,0,0.3)] hover:shadow-[0_0_35px_rgba(183,109,255,0.2)] transition-all">
+<div class="space-y-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Deep Space Enterprise</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">For defense, national space agencies, and mega-constellations (50+ spacecraft).</p>
+</div>
+<div class="py-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold price-val" data-annual="$14,800+" data-monthly="$18,500+">$18,500+</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ mo</span>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Unlimited spacecraft &amp; payload nodes</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Air-gapped on-premise or sovereign cloud</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Hardware-in-the-loop (HIL) simulators</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Custom FPGA ground station decoders</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Dedicated embedded mission ops crew</span>
+</li>
+<li class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>ITAR &amp; FedRAMP High certification</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-lg">
+<a class="w-full inline-flex justify-center items-center py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-body-md text-body-md font-semibold transition-all" href="#">
+              Contact Flight Director
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. PRE-FOOTER CONVERSION BANNER -->
+<section class="relative z-10 w-full max-w-7xl mx-auto px-gutter pt-space-xl pb-space-xl">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-xl text-center shadow-[0_0_60px_rgba(183,109,255,0.2)]">
+<!-- Aurora Gradient Accent Background -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[45rem] h-[18rem] bg-gradient-to-r from-primary/30 via-tertiary/20 to-secondary/30 blur-[90px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto space-y-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/20 text-primary font-label-caps text-label-caps tracking-widest">
+          FLIGHT-READY DEPLOYMENT
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+          Ready to launch your orbital infrastructure in minutes?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Connect your flight bus, simulate trajectory state vectors, and integrate real-time downlinks with zero aerospace friction.
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-lg bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary font-headline-sm text-body-md font-semibold tracking-wide shadow-[0_0_25px_rgba(183,109,255,0.6)] hover:shadow-[0_0_35px_rgba(183,109,255,0.85)] hover:brightness-110 transition-all" href="#">
+<span>Get Started</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-container-high/80 text-on-surface font-body-md text-body-md font-medium hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span>Read Documentation</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Monthly/Annual Pricing Logic -->
+<script>
+    (function initPricingToggle() {
+      const toggle = document.getElementById('pricing-toggle');
+      if (!toggle) return;
+      const buttons = toggle.querySelectorAll('.billing-btn');
+      const priceVals = document.querySelectorAll('.price-val');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+          btn.classList.remove('text-on-surface-variant');
+
+          const period = btn.getAttribute('data-period');
+          priceVals.forEach(val => {
+            val.textContent = val.getAttribute('data-' + period);
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="relative z-10 w-full bg-surface-container-lowest/90 backdrop-blur-xl border-t border-primary/15"><div class="w-full bg-surface-container-low/70 border-b border-outline-variant/30 py-space-xs px-gutter"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm font-label-code text-label-code"><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-xs text-tertiary"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>LEO CONSTELLATION TELEMETRY</span><span class="text-outline">|</span><span class="text-on-surface-variant">SV-ORBIT: 520KM INCL: 51.64°</span><span class="text-outline">|</span><span class="text-on-surface-variant">UPLINK: 42.8 GBPS [NOMINAL]</span></div><div class="flex items-center gap-space-sm"><span class="text-on-surface-variant">ACTIVE APOGEE BURNS:</span><span class="text-primary font-bold">04 STABLE</span></div></div></div><div class="max-w-7xl mx-auto px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-2 md:grid-cols-5 gap-space-lg mb-space-xl"><div class="col-span-2 space-y-space-md"><div class="flex items-center gap-space-md"><img alt="LaunchPad Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W1kMhZM4cOlaHQgZoh0DSDHGIat9YLlmCoh1FixqvwCynYo2V66qECIvVq1ITfbnotCs5taZztBWTrZt1SYTcBZoGQcJeeSjA5bkGTn91o_HPo2KZuWAVDB7RgcoKEXbCIQ7cKey9JJd3jH8d1gdve_jJB8I8SQJQM3nelI6VC5uhffOHFjgwAU0GpcViw8ZC_KF_OpCLdTtL569rT94atPKjM3c0SUD4_YsDr4vD67ziCJs7O-iRRi01i"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">LaunchPad</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Deterministic aerospace orchestration, autonomous orbital bus computing, and telemetry pipeline infrastructure for high-consequence space-tech operations.</p><div class="flex items-center gap-space-sm"><a class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span></a><a class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">satellite_alt</span></a><a class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a></div></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Platform</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Orbital Bus Core</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Trajectory Solver</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Propulsion Telemetry</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">RF Link Matrix</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Architecture</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Zero-Trust Payload</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Radiation-Hard VM</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Edge Compute SDK</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Flight API Specs</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Enterprise</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">ITAR Controls</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">SLA Guarantees</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Security Center</li><li class="text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Contact Ground Crew</li></ul></div></div><div class="pt-space-lg border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-xs"><span class="font-label-caps text-label-caps px-space-sm py-space-xs rounded-full bg-surface-container border border-primary/30 text-primary">SOC2 TYPE II</span><span class="font-label-caps text-label-caps px-space-sm py-space-xs rounded-full bg-surface-container border border-primary/30 text-primary">ITAR READY</span><span class="font-label-caps text-label-caps px-space-sm py-space-xs rounded-full bg-surface-container border border-primary/30 text-primary">ISO 27001</span><span class="font-label-caps text-label-caps px-space-sm py-space-xs rounded-full bg-surface-container border border-secondary/30 text-secondary">AEROSPACE AS9100D</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 LaunchPad Systems Corp. All mission parameters reserved.</p></div></div></footer></body></html>

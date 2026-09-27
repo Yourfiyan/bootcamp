@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    --color-bg-space: #0A0B1A;
+    --color-surface-1: #0F1123;
+    --color-surface-2: #151833;
+    --color-surface-container: #1d1e2e;
+    --color-photon-violet: #A855F7;
+    --color-suborbital-cyan: #3B82F6;
+    --color-aurora-lavender: #C084FC;
+    --color-stellar-white: #FFFFFF;
+    --color-starlight-silver: #94A3B8;
+    --color-orbit-slate: #64748B;
+  }
+
+  body {
+    background-color: var(--color-bg-space);
+    color: #e2e0f7;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Accessible Focus-visible Indicator across all interactive elements (A11Y-01) */
+  :focus-visible {
+    outline: 2px solid #a855f7 !important;
+    outline-offset: 3px !important;
+  }
+}
+
+/* Lenis Smooth Scroll Recommended Classes */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Velocity Reactive Motion Container */
+.velocity-reactive {
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0B1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #282939;
+  border-radius: 9999px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+/* Glassmorphism Presets according to DESIGN.md */
+.glass-deck-1 {
+  background: rgba(15, 17, 35, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+}
+
+.glass-deck-2 {
+  background: rgba(21, 24, 51, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+  box-shadow: 0 0 24px rgba(168, 85, 247, 0.12);
+}
+
+.glass-card-interactive {
+  background: rgba(15, 17, 35, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.22);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  border-color: rgba(192, 132, 252, 0.6);
+  box-shadow: 0 0 32px rgba(168, 85, 247, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Button Presets */
+.btn-primary-action {
+  background: linear-gradient(135deg, #A855F7 0%, #8B5CF6 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.45);
+  transition: all 0.25s ease;
+}
+
+.btn-primary-action:hover {
+  filter: brightness(1.12);
+  box-shadow: 0 0 28px rgba(168, 85, 247, 0.65);
+  transform: translateY(-1px);
+}
+
+.btn-secondary-glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #FFFFFF;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+.btn-secondary-glass:hover {
+  border-color: rgba(192, 132, 252, 0.7);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Telemetry scanline overlay */
+.scanline-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 38, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 255, 0, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Glow radial utilities */
+.glow-orb-violet {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, rgba(168, 85, 247, 0) 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.glow-orb-cyan {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(59, 130, 246, 0) 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* Radar pulse animation */
+@keyframes radarSweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar {
+  animation: radarSweep 8s linear infinite;
+}
+
+/* Orbit circle dash animation */
+@keyframes orbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit-slow {
+  animation: orbitSpin 35s linear infinite;
+}
+
+.animate-orbit-medium {
+  animation: orbitSpin 20s linear infinite;
+}
+
+.animate-orbit-fast {
+  animation: orbitSpin 12s linear infinite;
+}
+
+/* Grid background pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(168, 85, 247, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.06) 1px, transparent 1px);
+}
+
+/* WCAG Reduced Motion Fallbacks (A11Y-01) */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .velocity-reactive {
+    transform: none !important;
+  }
+}
